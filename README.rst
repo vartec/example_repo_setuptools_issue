@@ -1,7 +1,7 @@
 Example Repo for Setuptools issue
 =================================
 
-These two repos have intentional version conflict to make issue stand out more.
+These two repos have an intentional version conflict to make the issue stand out more.
 `pip` silently ignores the conflic according to its standard rules (top level wins).
 
 STR
@@ -27,4 +27,4 @@ AR
 What I'd like to achieve
 ------------------------
 
-A way of preventing `python setup.py test` from attempting to install anything, given that everything is already installed in previous step using `pip`
+A way of preventing ``python setup.py test`` from attempting to install anything, given that everything needed is already installed in previous step using ``pip``
