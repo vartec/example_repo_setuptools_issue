@@ -6,7 +6,8 @@ These two repos have intentional version conflict to make issue stand out more.
 
 STR
 ---
-.. code::
+.. code-block:: sh
+
     mkvirtualenv test
     git clone git+ssh://git@github.com/vartec/example_repo_setuptools_issue.git
     cd example_repo_setuptools_issue
