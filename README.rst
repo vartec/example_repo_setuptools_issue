@@ -6,21 +6,21 @@ These two repos have intentional version conflict to make issue stand out more.
 
 STR
 ---
-```
-mkvirtualenv test
-git clone git+ssh://git@github.com/vartec/example_repo_setuptools_issue.git
-cd example_repo_setuptools_issue
-pip install -e .[testing] --process-dependency-links
-python setup.py test
-```
+::
+    mkvirtualenv test
+    git clone git+ssh://git@github.com/vartec/example_repo_setuptools_issue.git
+    cd example_repo_setuptools_issue
+    pip install -e .[testing] --process-dependency-links
+    python setup.py test
+
 
 ER
 --
-`python setup.py test` not attempting to install anything, just running the tests
+``python setup.py test`` not attempting to install anything, just running the tests
 
 AR
 --
-`python setup.py test` attempts to reinstall submodule dependencies, resulting in `VersionConflict`
+``python setup.py test`` attempts to reinstall submodule dependencies, resulting in `VersionConflict`
 
 
 What I'd like to achieve
