@@ -2,9 +2,8 @@ from setuptools import setup, find_packages
 
 install_requires = [
     'redis~=2.8.0',
-    'https://github.com/vartec/example_repo_setuptools_issue_submodule',
+    'git+https://github.com/vartec/example_repo_setuptools_issue_submodule.git',
 ]
-
 
 tests_require = [
     'pytest',
