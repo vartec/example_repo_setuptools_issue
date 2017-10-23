@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 install_requires = [
     'redis~=2.8.0',
-    'git+https://github.com/vartec/example_repo_setuptools_issue_submodule.git',
+    'example_submodule',
 ]
 
 tests_require = [
@@ -20,4 +20,7 @@ setup(
     extras_require={
         'testing': tests_require,
     },
+    dependency_links=[
+        'git+ssh://git@github.com/vartec/example_repo_setuptools_issue_submodule.git#egg=example_submodule-0.1.0',
+    ]
 )
