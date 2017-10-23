@@ -9,7 +9,7 @@ STR
 .. code-block:: sh
 
     mkvirtualenv test
-    git clone git+ssh://git@github.com/vartec/example_repo_setuptools_issue.git
+    git clone git@github.com:vartec/example_repo_setuptools_issue.git
     cd example_repo_setuptools_issue
     pip install -e .[testing] --process-dependency-links
     python setup.py test
